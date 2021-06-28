@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap');
+
 * {
-    font-size: 2rem;;
+    font-size: 2rem;
+    font-family: Rajdhani, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    padding: 0 1rem;
+    background-color: rgb(34, 0, 66);
+    display: flex;
+    align-items: center;
+}
+
+.container nav {
+    text-align: right;
+    width: 15%;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: yellowgreen;
+    border: 1px solid yellow;
+    padding-right: 0.5rem;
+    margin-bottom: 5px;
 }
