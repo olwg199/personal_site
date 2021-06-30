@@ -5,32 +5,22 @@
   font-family: Rajdhani, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: rgb(34, 0, 66);
   color: yellowgreen;
 }
 
 .container {
   height: 100vh;
-  padding: 0 1rem;
-  background-color: rgb(34, 0, 66);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-article {
-  padding: 4rem;
-}
-
-.main-title {
-  font-weight: 600;
-  font-size: 4rem;
-}
-
-.about p {
-  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .container nav {
+  position: fixed;
+  right: 1rem;
   text-align: right;
   width: 15%;
   min-width: 240px;
@@ -48,4 +38,33 @@ article {
 .nav-link:hover {
   color: rgb(34, 0, 66);
   background-color: yellowgreen;
+}
+
+.scroll-container {
+  scroll-behavior: smooth;
+}
+
+article {
+  height: 100vh;
+  padding: 2rem;
+  transition: all 1s ease-out;
+  box-sizing: border-box;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about p {
+  font-size: 1rem;
+}
+
+.about h1 {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.skills {
 }

@@ -6,20 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <title>Oleh Yastrebov</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
-      <article class="about">
-        <div class="main-title">Oleh Yastrebov</div>
-        <p>A passionate software developer.</p>
-      </article>
       <nav>
         <a href="#about" class="nav-link">About Me</a>
-        <a href="#about" class="nav-link">Skills</a>
-        <a href="#about" class="nav-link">Portfolio</a>
-        <a href="#about" class="nav-link">Education</a>
-        <a href="#about" class="nav-link">Goals</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#goals" class="nav-link">Goals</a>
       </nav>
     </div>
+    <div class="scroll-container">
+      <article class="about" id="about">
+        <h1>Oleh Yastrebov</h1>
+        <p>A passionate software developer.</p>
+      </article>
+
+      <article class="skills" id="skills">Skills</article>
+
+      <article class="portfolio" id="portfolio">Portfolio</article>
+
+      <article class="education" id="education">Education</article>
+
+      <article class="goals" id="goals">Goals</article>
+    </div>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
