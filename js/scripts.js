@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+  // Smooth scroll
     $("a.nav-link").click(function (event) {
       event.preventDefault();
       $("html, body").animate(
@@ -6,4 +8,5 @@ $(document).ready(function () {
         750
       );
     });
+    
   });

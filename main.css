@@ -1,12 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap");
 
 * {
-  font-size: 2rem;
   font-family: Rajdhani, sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(34, 0, 66);
   color: yellowgreen;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.underline {
+  border-bottom: 1px solid yellowgreen;
 }
 
 .container {
@@ -22,14 +42,13 @@
   position: fixed;
   right: 1rem;
   text-align: right;
-  width: 15%;
   min-width: 240px;
 }
 
 .nav-link {
   text-decoration: none;
   display: block;
-  font-size: 1rem;
+  font-size: 2rem;
   border: 1px solid yellow;
   padding-right: 0.5rem;
   margin-bottom: 5px;
@@ -44,11 +63,44 @@
   scroll-behavior: smooth;
 }
 
-article {
-  height: 100vh;
-  padding: 2rem;
+section {
+  min-height: 100vh;
+  max-width: 100%;
+  padding: 2rem 4rem;
+  padding-right: 320px;
   transition: all 1s ease-out;
   box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid yellowgreen;
+}
+
+.row .col:last-child {
+  border-right: none;
+}
+
+.col-w-1 {
+  flex-basis: 30%;
+}
+
+.col-to-end {
+  align-items: flex-end;
+}
+
+.col-to-start {
+  align-items: flex-start;
+}
+
+.col-w-2 {
+  flex-basis: 60%;
 }
 
 .about {
@@ -57,14 +109,6 @@ article {
   justify-content: center;
 }
 
-.about p {
-  font-size: 1rem;
-}
-
-.about h1 {
-  font-weight: 600;
-  font-size: 4rem;
-}
-
-.skills {
+.skills li {
+  list-style: none;
 }
