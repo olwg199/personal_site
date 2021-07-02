@@ -33,16 +33,25 @@ p {
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: end;
   position: absolute;
+  margin-right: 1rem;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 .container nav {
-  position: fixed;
-  right: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1rem;
   text-align: right;
   min-width: 240px;
+}
+
+#nav.fixed {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
 }
 
 .nav-link {

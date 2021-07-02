@@ -1,6 +1,7 @@
 $(document).ready(function () {
+  const distanceFromTopToNav = $('#nav').offset().top;
 
-  // Smooth scroll
+    // Smooth scroll
     $("a.nav-link").click(function (event) {
       event.preventDefault();
       $("html, body").animate(
@@ -9,4 +10,13 @@ $(document).ready(function () {
       );
     });
     
-  });
+    // Sticky menu to the top after first section
+    $(window).scroll(function() {
+      let currentDistanceFromTop = $(this).scrollTop();
+      if (currentDistanceFromTop >= distanceFromTopToNav) {
+          $('#nav').addClass('fixed');
+      } else {
+          $('#nav').removeClass('fixed');
+      }
+    });
+});
