@@ -129,6 +129,7 @@ section {
   padding: 1rem;
   border: 1px solid #9acd32;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .project {

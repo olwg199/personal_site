@@ -1,0 +1,7 @@
+.project-details {
+  min-height: 100vh;
+  max-width: 100%;
+  padding: 2rem 4rem;
+  transition: all 1s ease-out;
+  box-sizing: border-box;
+}
