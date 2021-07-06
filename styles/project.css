@@ -5,3 +5,18 @@
   transition: all 1s ease-out;
   box-sizing: border-box;
 }
+
+.gallery {
+  max-width: 40%;
+  background-color: black;
+}
+
+.gallery img {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.info {
+  background-color: blue;
+  min-width: 60%;
+}
