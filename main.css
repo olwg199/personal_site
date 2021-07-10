@@ -72,6 +72,10 @@ p {
   background-color: yellowgreen;
 }
 
+.navBtn {
+  display: none;
+}
+
 .scroll-container {
   scroll-behavior: smooth;
 }
@@ -137,17 +141,12 @@ section {
 }
 
 .project {
-  position: relative;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease;
 }
 
 .project:hover {
   transform: translate(-5px, -5px);
   box-shadow: 0px 0px 15px 5px yellowgreen;
-}
-
-.project:hover::after {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project-img {
@@ -189,7 +188,7 @@ section {
 
 @media (max-width: 400px) {
   section {
-    padding-right: 0;
+    padding: 1rem;
   }
 
   .container {
@@ -197,6 +196,7 @@ section {
     width: 100%;
     margin: 0;
     flex-direction: column;
+    position: fixed;
   }
 
   .container nav {
@@ -204,7 +204,8 @@ section {
     height: 0px;
     opacity: 0;
     pointer-events: none;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
+    background-color: rgb(34, 0, 66);
   }
 
   .container nav a:last-child {
@@ -219,18 +220,36 @@ section {
   }
 
   .container nav.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    height: auto;
+    height: 240px;
     opacity: 1;
     pointer-events: all;
   }
 
+  #nav.fixed {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+
   .nav-link {
     text-align: center;
-    background-color: transparent;
+    margin: 0;
   }
 
   h1 {
     font-size: 4rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+    min-width: 100%;
   }
 }

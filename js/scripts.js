@@ -8,6 +8,9 @@ $(document).ready(function () {
         { scrollTop: $($(this).attr("href")).offset().top },
         750
       );
+
+      //Close menu and change icon
+      navBtnClickToggle();
     });
     
     // Sticky menu to the top after first section
@@ -23,6 +26,20 @@ $(document).ready(function () {
     //Collapse function for nav
 
     $(".navBtn").click(function(){
-      $(".container nav").toggleClass('active');
+      navBtnClickToggle();
     });
 });
+
+function navBtnClickToggle() {
+  let navBtn = $(".container nav");
+
+  if(navBtn.hasClass('active')){
+    navBtn.removeClass('active');
+    $('.navBtn i').removeClass('bx-caret-up-circle');
+    $('.navBtn i').addClass('bx-caret-down-circle');
+  } else {
+    navBtn.addClass('active');
+    $('.navBtn i').removeClass('bx-caret-down-circle');
+    $('.navBtn i').addClass('bx-caret-up-circle');
+  }
+}
