@@ -19,4 +19,10 @@ $(document).ready(function () {
           $('#nav').removeClass('fixed');
       }
     });
+
+    //Collapse function for nav
+
+    $(".navBtn").click(function(){
+      $(".container nav").toggleClass('active');
+    });
 });
