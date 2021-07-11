@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap");
 
 * {
-  font-family: Rajdhani, sans-serif;
   margin: 0;
   padding: 0;
-  color: yellowgreen;
 }
 
 body {
+  font-family: Rajdhani, sans-serif;
   position: relative;
   min-height: 100vh;
   width: 100%;
   background-color: rgb(34, 0, 66);
+  color: yellowgreen;
 }
 
 h1 {
@@ -65,6 +65,7 @@ p {
   border: 1px solid yellow;
   padding-right: 0.5rem;
   margin-bottom: 5px;
+  color: yellowgreen;
 }
 
 .nav-link:hover {
@@ -106,10 +107,32 @@ section {
   border-right: none;
 }
 
+/* About section
+================ */
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.social {
+  display: flex;
+}
+
+.social-link {
+  text-decoration: none;
+  display: flex;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  margin-right: 0.5rem;
+  transition: all 0.5s ease;
+  color: yellowgreen;
+}
+
+.social-link:hover,
+.social-link:focus {
+  transform: scale(1.1);
+  color: yellow;
 }
 
 .skills li {
