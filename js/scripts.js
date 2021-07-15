@@ -13,18 +13,21 @@ $(document).ready(function () {
       navBtnClickToggle();
     });
     
-    // Sticky menu to the top after first section
+    //Sticky menu to the top after first section
+    //If page is opend not on top - make sure that menu is visible
+    if($(window).scrollTop()>=distanceFromTopToNav){
+      $('#nav').addClass('fixed');
+    }
     $(window).scroll(function() {
       let currentDistanceFromTop = $(this).scrollTop();
       if (currentDistanceFromTop >= distanceFromTopToNav) {
-          $('#nav').addClass('fixed');
+        $('#nav').addClass('fixed');
       } else {
-          $('#nav').removeClass('fixed');
+        $('#nav').removeClass('fixed');
       }
     });
 
     //Collapse function for nav
-
     $(".navBtn").click(function(){
       navBtnClickToggle();
     });
