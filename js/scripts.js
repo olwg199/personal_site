@@ -34,7 +34,7 @@ $(document).ready(function () {
 });
 
 function navBtnClickToggle() {
-  let navBtn = $(".container nav");
+  let navBtn = $(".nav-container nav");
 
   if(navBtn.hasClass('active')){
     navBtn.removeClass('active');
