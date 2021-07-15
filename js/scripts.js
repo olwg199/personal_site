@@ -14,7 +14,7 @@ $(document).ready(function () {
     });
     
     //Sticky menu to the top after first section
-    //If page is opend not on top - make sure that menu is visible
+    //If page is opened not on top - make sure that menu is visible
     if($(window).scrollTop()>=distanceFromTopToNav){
       $('#nav').addClass('fixed');
     }
