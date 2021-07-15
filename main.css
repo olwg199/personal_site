@@ -220,6 +220,10 @@ section {
   font-weight: 600;
 }
 
+.education .col {
+  flex: 1;
+}
+
 .education .col > div {
   margin-bottom: 5px;
 }
@@ -278,6 +282,7 @@ section {
   section {
     padding: 2rem;
   }
+
   p {
     font-size: 1rem;
   }
