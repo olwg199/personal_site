@@ -212,6 +212,28 @@ section {
   border: none;
 }
 
+/* Education section
+==================== */
+
+.education .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.education .col > div {
+  margin-bottom: 5px;
+}
+
+.education .degree a {
+  color: yellow;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.education .degree a:hover {
+  text-shadow: 0 0 yellowgreen;
+}
+
 @media (max-width: 576px) {
   section {
     padding: 1rem;
@@ -256,6 +278,10 @@ section {
   section {
     padding: 2rem;
   }
+  p {
+    font-size: 1rem;
+  }
+
   .nav-container {
     height: auto;
     width: 100%;
