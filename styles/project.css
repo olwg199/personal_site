@@ -6,9 +6,29 @@
   box-sizing: border-box;
 }
 
+.project-details a {
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: yellowgreen;
+  padding: 5px 15px;
+  margin-right: 10px;
+  border: 1px solid yellowgreen;
+  transition: all 0.3s ease;
+}
+
+.project-details a:hover {
+  color: rgb(34, 0, 66);
+  background-color: yellowgreen;
+}
+
+.content {
+  display: flex;
+  margin: 2rem 0;
+}
+
 .gallery {
-  max-width: 40%;
-  background-color: black;
+  flex: 1;
 }
 
 .gallery img {
@@ -17,6 +37,5 @@
 }
 
 .info {
-  background-color: blue;
-  min-width: 60%;
+  flex: 2;
 }
