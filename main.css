@@ -155,13 +155,18 @@ section {
 /* Projects section
 =================== */
 .projects {
+  display: flex;
+  margin-top: 1rem;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .card {
-  min-width: 20%;
-  max-width: 20%;
+  max-width: 30%;
+  height: 100%;
   padding: 1rem;
+  margin-bottom: 1rem;
   border: 1px solid #9acd32;
   text-decoration: none;
   box-sizing: border-box;
@@ -210,6 +215,7 @@ section {
   justify-content: center;
   align-items: center;
   border: none;
+  margin: auto;
 }
 
 /* Education section
@@ -274,7 +280,6 @@ section {
   .card {
     max-width: 100%;
     min-width: 100%;
-    margin: 1rem 0;
   }
 }
 
@@ -336,5 +341,10 @@ section {
   .nav-link {
     text-align: center;
     margin: 0;
+  }
+
+  /* Portfolio section */
+  .card {
+    min-width: 47%;
   }
 }
