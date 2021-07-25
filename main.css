@@ -205,6 +205,11 @@ section {
   text-align: center;
 }
 
+.project-tools i:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
 .project-links {
   display: flex;
   margin-top: 0.5rem;
