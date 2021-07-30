@@ -57,7 +57,7 @@ $(document).ready(function () {
     var subject = $("#" + form_id + " [name='subject']").val();
     var message = $("#" + form_id + " [name='text']").val();
     data['subject'] = subject;
-    data['text'] = +message;
+    data['text'] = message;
 
     $.post('https://postmail.invotes.com/send',
       data,
