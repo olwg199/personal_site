@@ -38,9 +38,13 @@ $(document).ready(function () {
     "access_token": "xv9sym5vmo5t5bha48gogfax"
   };
   var sendButton = $("#" + form_id + " [name='send']");
+  var subjectInput = $("#" + form_id + " [name='subject']");
+  var messageInput = $("#" + form_id + " [name='text']");
 
   function onSuccess() {
     alert("Thank you for your message!");
+    subjectInput.val("")
+    messageInput.val("")
     sendButton.val('Sent');
     sendButton.prop('disabled', true);
   }
@@ -54,8 +58,8 @@ $(document).ready(function () {
   function send() {
     sendButton.val('Sending…');
 
-    var subject = $("#" + form_id + " [name='subject']").val();
-    var message = $("#" + form_id + " [name='text']").val();
+    var subject = subjectInput.val();
+    var message = messageInput.val();
     data['subject'] = subject;
     data['text'] = message;
 

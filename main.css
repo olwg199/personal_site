@@ -326,45 +326,6 @@ section {
   background-color: greenyellow;
 }
 
-@media (max-width: 576px) {
-  section {
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  .col {
-    border-right: none;
-    border-bottom: 1px dashed yellowgreen;
-  }
-
-  .row .col:last-child {
-    border-bottom: none;
-  }
-
-  .row {
-    flex-direction: column;
-    margin: 0;
-  }
-
-  .skills .title {
-    flex: 1;
-    align-items: flex-start;
-  }
-
-  .skills .list {
-    flex: 3;
-    align-items: flex-start;
-  }
-
-  .card {
-    max-width: 100%;
-    min-width: 100%;
-  }
-}
-
 @media (max-width: 1200px) {
   section {
     padding: 2rem;
@@ -428,5 +389,52 @@ section {
   /* Portfolio section */
   .card {
     min-width: 47%;
+  }
+
+  .contact-me-form {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .col {
+    border-right: none;
+    border-bottom: 1px dashed yellowgreen;
+  }
+
+  .row .col:last-child {
+    border-bottom: none;
+  }
+
+  .row {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .skills .title {
+    flex: 1;
+    align-items: flex-start;
+  }
+
+  .skills .list {
+    flex: 3;
+    align-items: flex-start;
+  }
+
+  .card {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .contact-me-form {
+    max-width: 100%;
   }
 }
