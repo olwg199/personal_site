@@ -277,7 +277,54 @@ section {
   text-shadow: 0 0 yellowgreen;
 }
 
-/* Goals Section */
+/* Contact Me Section
+===================== */
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 35%;
+}
+
+.contact-me-form label {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.form-input {
+  display: flex;
+  border: 1px solid yellow;
+  font-family: Rajdhani, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: yellowgreen;
+  padding: 7px 15px;
+  background-color: transparent;
+}
+
+.form-submit {
+  display: flex;
+  border: 1px solid yellow;
+  font-family: Rajdhani, sans-serif;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: yellowgreen;
+  justify-content: center;
+  max-width: 100px;
+  padding: 5px 15px;
+  background-color: transparent;
+}
+
+.form-submit:hover {
+  cursor: pointer;
+  color: rgb(34, 0, 66);
+  background-color: yellow;
+}
+
+.form-submit:disabled {
+  color: rgb(34, 0, 66);
+  background-color: greenyellow;
+}
 
 @media (max-width: 576px) {
   section {

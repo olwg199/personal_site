@@ -27,7 +27,7 @@
       <a href="#skills" class="nav-link">Skills</a>
       <a href="#portfolio" class="nav-link">Portfolio</a>
       <a href="#education" class="nav-link">Education</a>
-      <a href="#goals" class="nav-link">Goals</a>
+      <a href="#contact" class="nav-link">Contact Me</a>
     </nav>
 
     <div class="navBtn" title="Menu">
@@ -297,9 +297,9 @@
 
       </div>
 
-      <div class="card more-projects">
+      <!-- <div class="card more-projects">
         <a href="#" class="project-link">More Projects -></a>
-      </div>
+      </div> -->
 
     </section>
 
@@ -418,16 +418,21 @@
       </div>
     </section>
 
-    <!-- Goals section -->
-    <section class="goals" id="goals">
-      <h2 class="underline">Goals</h2>
+    <!-- Contact me section -->
+    <section class="contact" id="contact">
+      <h2 class="underline">Contact me</h2>
+
+      <form id="contact-me-form" class="contact-me-form">
+        <label for="subject">Subject:</label>
+        <input type="text" class="form-input" id="subject" name="subject" placeholder="Your subject" />
+
+        <label for="message">Message:</label>
+        <textarea name="text" class="form-input" id="message" rows="7" placeholder="Your message"></textarea>
+
+        <input id="submit_form" class="form-submit" name="send" type="submit" value="Send" />
+      </form>
     </section>
   </div>
-
-
-
-
-
 
   <script src="js/scripts.js"></script>
 </body>
