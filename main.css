@@ -277,6 +277,8 @@ section {
   text-shadow: 0 0 yellowgreen;
 }
 
+/* Goals Section */
+
 @media (max-width: 576px) {
   section {
     padding: 1rem;
